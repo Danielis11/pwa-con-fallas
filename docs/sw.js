@@ -1,7 +1,7 @@
 // Service Worker de Ruta SG. Al cambiar cualquier archivo del shell, sube VERSION.
 importScripts('js/db.js'); // misma capa IndexedDB que usa la página (para Background Sync)
 
-const VERSION = 'v12';
+const VERSION = 'v13';
 const CACHE_SHELL = 'shell-' + VERSION;
 const CACHE_DATOS = 'datos-' + VERSION;
 const CACHE_RECURSOS = 'recursos-' + VERSION;
@@ -25,7 +25,7 @@ const SHELL = [
 
 // ---------- Ciclo de vida ----------
 self.addEventListener('install', e => {
-  e.waitUntil(caches.open(CACHE_SHELL).then(c => c.addAll(SHELL)));
+  e.waitUntil(caches.open(CACHE_SHELL).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', e => {
