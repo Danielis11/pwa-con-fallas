@@ -107,7 +107,7 @@ async function guardarResena(resena) {
   // Sin red: se encola una sincronización en segundo plano (Background Sync)
   const reg = await navigator.serviceWorker.ready;
   if ('sync' in reg) {
-    await reg.sync.register('enviar-resena');
+    await reg.sync.register('enviar-resenas');
     avisar('Sin conexión: tu reseña se enviará sola cuando regrese la señal.');
   } else {
     avisar('Sin conexión: tu reseña se enviará la próxima vez que abras la app con señal.');
