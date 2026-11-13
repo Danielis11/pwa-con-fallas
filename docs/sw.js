@@ -1,7 +1,7 @@
 // Service Worker de Ruta SG. Al cambiar cualquier archivo del shell, sube VERSION.
 importScripts('js/db.js'); // misma capa IndexedDB que usa la página (para Background Sync)
 
-const VERSION = 'v8';
+const VERSION = 'v9';
 const CACHE_SHELL = 'shell-' + VERSION;
 const CACHE_DATOS = 'datos-' + VERSION;
 const CACHE_RECURSOS = 'recursos-' + VERSION;
@@ -14,7 +14,7 @@ const SHELL = [
   'offline.html',
   'manifest.json',
   'data/destinos.json',
-  'css/estilo.css',
+  'css/estilos.css',
   'js/app.js',
   'js/db.js',
   'js/dispositivo.js',
