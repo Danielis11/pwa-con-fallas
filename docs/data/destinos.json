@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "nombre": "Misión de Santiago de Jalpan",
+    "municipio": "Jalpan de Serra",
+    "tipo": "Misión",
+    "descripcion": "Primera de las cinco misiones franciscanas de la Sierra Gorda, Patrimonio de la Humanidad. Fachada barroca con relieves de la orden franciscana.",
+    "horario": "Todos los días, 8:00 a 20:00",
+    "lat": 21.2178,
+    "lng": -99.4731
+  },
+  {
+    "id": 2,
+    "nombre": "Misión de Santa María de las Aguas de Landa",
+    "municipio": "Landa de Matamoros",
+    "tipo": "Misión",
+    "descripcion": "Considerada la fachada más elaborada de las misiones serranas; destaca su decoración en argamasa policromada.",
+    "horario": "Todos los días, 9:00 a 18:00",
+    "lat": 21.1844,
+    "lng": -99.3197
+  },
+  {
+    "id": 3,
+    "nombre": "Misión de San Francisco del Valle de Tilaco",
+    "municipio": "Landa de Matamoros",
+    "tipo": "Misión",
+    "descripcion": "La misión más pequeña y apartada; su fachada conserva sirenas y ángeles tallados en argamasa.",
+    "horario": "Todos los días, 9:00 a 18:00",
+    "lat": 21.1740,
+    "lng": -99.1840
+  },
+  {
+    "id": 4,
+    "nombre": "Misión de Nuestra Señora de la Luz de Tancoyol",
+    "municipio": "Jalpan de Serra",
+    "tipo": "Misión",
+    "descripcion": "Fachada con la cruz de la orden de Calatrava y retablos tallados; rodeada de cultivos de la comunidad.",
+    "horario": "Todos los días, 9:00 a 18:00",
+    "lat": 21.3925,
+    "lng": -99.3270
+  },
+  {
+    "id": 5,
+    "nombre": "Misión de San Miguel Concá",
+    "municipio": "Arroyo Seco",
+    "tipo": "Misión",
+    "descripcion": "La misión más baja y cálida de la sierra, a orillas del río Santa María; fachada dedicada a San Miguel Arcángel.",
+    "horario": "Todos los días, 9:00 a 18:00",
+    "lat": 21.4310,
+    "lng": -99.6280
+  },
+  {
+    "id": 6,
+    "nombre": "Cascada El Chuveje",
+    "municipio": "Pinal de Amoles",
+    "tipo": "Naturaleza",
+    "descripcion": "Caída de agua de unos 30 m en un cañón de vegetación densa; sendero de aproximadamente 1 km desde el estacionamiento.",
+    "horario": "Todos los días, 8:00 a 17:00",
+    "lat": 21.1620,
+    "lng": -99.5560
+  },
+  {
+    "id": 7,
+    "nombre": "Sótano del Barro",
+    "municipio": "Arroyo Seco",
+    "tipo": "Naturaleza",
+    "descripcion": "Abismo de más de 400 m de profundidad, hogar de una colonia de guacamaya verde. Requiere guía local.",
+    "horario": "Con guía, previa reservación",
+    "lat": 21.3567,
+    "lng": -99.6928
+  },
+  {
+    "id": 8,
+    "nombre": "Presa Jalpan",
+    "municipio": "Jalpan de Serra",
+    "tipo": "Naturaleza",
+    "descripcion": "Humedal a un costado de la cabecera municipal, sitio Ramsar; observación de aves y paseos en kayak.",
+    "horario": "Todos los días, 7:00 a 19:00",
+    "lat": 21.2010,
+    "lng": -99.4650
+  }
+]

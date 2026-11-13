@@ -1,0 +1,74 @@
+/* Paleta: theme_color #1F3864 · background_color #F4F6FA (iguales a manifest.json) */
+:root {
+  --primario: #1F3864;
+  --acento: #2EC4B6;
+  --fondo: #F4F6FA;
+  --tarjeta: #FFFFFF;
+  --texto: #1B2333;
+  --tenue: #5B6578;
+  --error: #C0392B;
+}
+body.oscuro {
+  --fondo: #10182A;
+  --tarjeta: #1B2540;
+  --texto: #E8ECF4;
+  --tenue: #A3ADC2;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Splash interno: mismo fondo que background_color para que no "parpadee" */
+.splash {
+  position: fixed; inset: 0; z-index: 10;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  background: #F4F6FA; color: var(--primario); font-weight: 600;
+  transition: opacity .4s;
+}
+.splash img { border-radius: 22px; }
+.splash.oculto { opacity: 0; pointer-events: none; }
+
+/* App shell */
+.barra {
+  background: var(--primario); color: #fff;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: .75rem 1rem;
+}
+.barra h1 { margin: 0; font-size: 1.25rem; }
+.estado { font-size: .8rem; padding: .2rem .6rem; border-radius: 1rem; background: var(--acento); color: #06302C; }
+.estado.sin-red { background: #F2B134; color: #3A2A00; }
+.menu { display: flex; overflow-x: auto; background: var(--tarjeta); border-bottom: 1px solid #0001; }
+.menu a { padding: .75rem 1rem; color: var(--primario); text-decoration: none; white-space: nowrap; font-weight: 600; }
+body.oscuro .menu a { color: var(--acento); }
+.menu a.activo { border-bottom: 3px solid var(--acento); }
+main { flex: 1; padding: 1rem; max-width: 760px; width: 100%; margin: 0 auto; }
+.pie { text-align: center; font-size: .75rem; color: var(--tenue); padding: 1rem; }
+
+/* Contenido */
+.tarjeta { background: var(--tarjeta); border-radius: 12px; padding: 1rem; margin-bottom: 1rem; box-shadow: 0 1px 3px #0002; }
+.tarjeta h2, .tarjeta h3 { margin-top: 0; }
+.etiqueta { display: inline-block; font-size: .75rem; padding: .1rem .5rem; border-radius: .5rem; background: #E3F7F5; color: #0B6B62; }
+.meta { color: var(--tenue); font-size: .9rem; }
+.origen { font-size: .8rem; color: var(--tenue); margin-bottom: .75rem; }
+.boton {
+  display: inline-block; border: 0; border-radius: 8px; padding: .6rem 1rem; cursor: pointer;
+  background: var(--primario); color: #fff; text-decoration: none; font-size: 1rem; margin: .25rem .25rem .25rem 0;
+}
+.boton.secundario { background: transparent; color: var(--primario); border: 2px solid var(--primario); }
+body.oscuro .boton.secundario { color: var(--acento); border-color: var(--acento); }
+label { display: block; margin: .75rem 0 .25rem; font-weight: 600; }
+input, select, textarea { width: 100%; padding: .5rem; border-radius: 6px; border: 1px solid #8892a6; font: inherit; }
+.pendiente { color: #8A5A00; font-weight: 600; }
+.enviada { color: #1E7D34; font-weight: 600; }
+.error { color: var(--error); }
+.aviso {
+  position: fixed; left: 50%; bottom: 1rem; transform: translateX(-50%);
+  background: #1B2333; color: #fff; padding: .75rem 1rem; border-radius: 8px; max-width: 90%;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "ruta-sg-pwa",
+  "version": "1.0.0",
+  "description": "Reforzamiento AWP Unidad II — Clínica de PWA (versión con fallas)",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "iconos": "node herramientas/generar-iconos.js",
+    "vapid": "node herramientas/generar-vapid.js"
+  },
+  "dependencies": {
+    "express": "4.22.3",
+    "web-push": "3.6.7"
+  }
+}

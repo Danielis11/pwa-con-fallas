@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ruta Turística Sierra Gorda</title>
+  <meta name="description" content="Destinos, misiones y reseñas de la Sierra Gorda queretana, aun sin señal.">
+  <meta name="theme-color" content="#1F3864">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="img/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="img/icons/icon-192.png">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <!-- SPLASH dentro de la app: visible mientras carga la primera vista -->
+  <div id="splash" class="splash" aria-hidden="true">
+    <img src="img/icons/icon-192.png" alt="" width="96" height="96">
+    <p>Ruta Turística Sierra Gorda</p>
+  </div>
+
+  <!-- APP SHELL: estructura fija que se precachea -->
+  <header class="barra">
+    <h1>Ruta SG</h1>
+    <span id="estado-red" class="estado">En línea</span>
+  </header>
+  <nav class="menu">
+    <a href="#/inicio">Inicio</a>
+    <a href="#/destinos">Destinos</a>
+    <a href="#/cercanos">Cerca de mí</a>
+    <a href="#/resenas">Reseñas</a>
+    <a href="#/ajustes">Ajustes</a>
+  </nav>
+  <main id="contenido">
+    <!-- CONTENIDO: lo genera app.js (CSR) con datos remotos o locales -->
+  </main>
+  <div id="aviso" class="aviso" role="status" hidden></div>
+  <footer class="pie">UTSJR · Unidad Académica Jalpan de Serra · Práctica AWP U2</footer>
+
+  <script src="js/db.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

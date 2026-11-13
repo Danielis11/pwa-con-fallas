@@ -1,0 +1,18 @@
+{
+  "name": "Ruta Turística Sierra Gorda",
+  "short_name": "RutaSG",
+  "description": "Destinos, misiones y reseñas de la Sierra Gorda queretana, aun sin señal.",
+  "lang": "es-MX",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "browser",
+  "orientation": "portrait",
+  "theme_color": "#1F3864",
+  "background_color": "#000000",
+  "icons": [
+    { "src": "img/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "img/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "img/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
