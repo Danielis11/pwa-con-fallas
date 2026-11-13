@@ -1,7 +1,7 @@
 // Service Worker de Ruta SG. Al cambiar cualquier archivo del shell, sube VERSION.
 importScripts('js/db.js'); // misma capa IndexedDB que usa la página (para Background Sync)
 
-const VERSION = 'v11';
+const VERSION = 'v12';
 const CACHE_SHELL = 'shell-' + VERSION;
 const CACHE_DATOS = 'datos-' + VERSION;
 const CACHE_RECURSOS = 'recursos-' + VERSION;
@@ -77,7 +77,7 @@ async function staleWhileRevalidate(peticion, nombreCache) {
   const enCache = await cache.match(peticion);
   const desdeRed = fetch(peticion)
     .then(respuesta => {
-      if (respuesta.ok) cache.put(peticion, respuesta);
+      if (respuesta.ok) cache.put(peticion, respuesta.clone());
       return respuesta;
     })
     .catch(() => enCache);
