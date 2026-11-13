@@ -191,7 +191,8 @@ const vistas = {
       // Permiso denegado o sin GPS: se ofrece una alternativa, no una pantalla vacía
       return `
         <h2>Destinos cerca de ti</h2>
-        <p class="error">${escapar(err.message)}</p>`;
+        <p class="error">${escapar(err.message)} Te mostramos todos los destinos.</p>
+        ${lista.map(d => tarjetaDestino(d)).join('')}`;
     }
   },
 
