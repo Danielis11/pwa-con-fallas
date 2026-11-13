@@ -47,8 +47,8 @@ window.addEventListener('offline', actualizarEstadoRed);
 
 // ===================== 3. Datos locales: preferencias (localStorage) =====================
 const preferencias = {
-  get tema() { return sessionStorage.getItem('tema') || 'claro'; },
-  set tema(valor) { sessionStorage.setItem('tema', valor); },
+  get tema() { return localStorage.getItem('tema') || 'claro'; },
+  set tema(valor) { localStorage.setItem('tema', valor); },
   get nombre() { return localStorage.getItem('nombre') || ''; },
   set nombre(valor) { localStorage.setItem('nombre', valor); },
 };
