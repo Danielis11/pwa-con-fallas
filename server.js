@@ -44,7 +44,7 @@ function paginaFicha(d) {
   <meta name="description" content="${escapar(d.descripcion)}">
   <meta name="theme-color" content="#1F3864">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="/css/estilos.css">
 </head>
 <body>
   <header class="barra"><h1>Ruta SG</h1><span class="estado">Ficha SSR</span></header>
